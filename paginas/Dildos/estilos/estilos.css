@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Commissioner;
+}
+header{
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+    background-image: url(./Imágenes/Sin\ título-1.jpg);
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+    opacity: 0.9;
+}
+body{
+    background-image: url(./Imágenes/fondo3.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/*inicio de menú*/
+#menu{
+    background-color: black;
+}
+.menu-nav{
+    display: flex;
+}
+.margen-derecha{
+    margin-right: 45.5%;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu ul li a{
+    color:white;
+    display: block;
+    padding: 20px 80px;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    background-color: #f998c3;
+    box-shadow: 0 0 10px #f998c3, 0 0 40px #f998c3, 0 0 80px #f998c3;
+    transition: 0.2s;
+}
+
+/*fin de menú*/
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+.skill{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.product-contest{
+    padding: 0 20px;
+}
+.product-rachel{
+    color: #01c2c9;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+}
+.product-price{
+    color: #636d6f;
+    font-size: 28px;
+    font-weight: inherit;
+    font-style: italic;
+    margin-left: 10px;
+}
+.product-description{
+    margin-top: 10px;
+}
+.contact-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(./Imágenes/footer.jpg);
+    margin-bottom: 40px;
+    padding: 30px;
+    color: #FFF;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+.link-contacto{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+.link-contacto:hover{
+    background: #f998c3;
+    box-shadow: 0 0 10px #f998c3, 0 0 40px #f998c3, 0 0 80px #f998c3;
+    transition: 0.2s;
+    border-radius: 7px;    
+}
+.div-coton-comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/*Botón de Compras neon*/
+.boton-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: black;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+.boton-neon:hover{
+    background: #f998c3;
+    box-shadow: 0 0 10px #f998c3, 0 0 40px #f998c3, 0 0 80px #f998c3;
+    transition: 0.2s;
+}
+/*fin de botón neon*/
+@media screen and (max-width: 600px){
+    header{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 80px;
+    }
+    main{
+        margin: 0 20px;
+    }
+    .skill{
+        width: auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .product-rachel, .product-price{
+        font-size: 20px;
+    }
+    .product-description{
+        font-size: 14px;
+    }
+
+    .contact-footer{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .link-contacto{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    #span1, #span2, #span3, #span4{
+        transition: none;
+        transition-delay: none;
+    }
+    #menu ul li a{
+        padding: 20px 10px;
+        font-size: 10px;
+    }
+    #menu{
+        width: 100%;
+    }
+    .margen-derecha{
+        margin-right: 9%;
+    }
+}
